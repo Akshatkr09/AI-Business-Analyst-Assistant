@@ -25,7 +25,7 @@ def generate_ba_document(requirement: str) -> str:
     Calls the Gemini API to generate structured BA documentation based on the user's requirement.
     """
     # Use the recommended model for general text tasks
-    model = genai.GenerativeModel('gemini-1.5-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
     
     prompt = f"""
 You are an expert Business Analyst. A client has provided the following raw business requirement or idea:
